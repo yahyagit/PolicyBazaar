@@ -422,8 +422,7 @@ public class Generic
 							else
 							{
 								return true;
-							}
-							
+							}					
 						}
 					};
 						return wait.until(fun);
@@ -438,12 +437,8 @@ public class Generic
 		finally
 		{
 			enableImplicitlyWait();
-		}
-		
+		}	
 	}
-	
-	
-	
 	public static String[] loopExcelSheetForData(String excelPath, String sheetName,int startRow, int col)
 	{
 		int rowCount = getRowCount(excelPath, sheetName);
@@ -455,8 +450,7 @@ public class Generic
 			j++;
 		}
 		return var;
-	}
-		
+	}	
 	public static boolean isPresentAndDisplayed(final WebElement element) 
 	{
 		  try {
@@ -464,8 +458,7 @@ public class Generic
 		  } catch (NoSuchElementException e) {
 		    return false;
 		  }
-	}
-		
+	}	
 	public static Object[][] OneDimToTwoDim( final String[] array, final int rows, final int cols ) 
 	{
 	    if (array.length != (rows*cols))
@@ -475,67 +468,6 @@ public class Generic
 	    for ( int i = 0; i < rows; i++ )
 	        System.arraycopy(array, (i*cols), bidi[i], 0, cols);
 	    return bidi;
-	}
-	
-	public static void typeDataAndPressTab(String s) 
-	{
-		Robot robo = null;
-		try {
-			robo = new Robot();
-			robo.setAutoDelay(20);
-			byte[] bytes = s.getBytes();
-			
-			for(Byte b: bytes)
-			{
-				int code=b;
-				if(code>96 && code <123)
-				{
-					code=code-32;
-					robo.keyPress(code);
-					robo.keyRelease(code);
-					robo.setAutoDelay(20);
-				}
-				else if(code>64 && code<91)
-				{
-					robo.keyPress(KeyEvent.VK_SHIFT);
-					robo.keyPress(code);
-					robo.setAutoDelay(20);
-					robo.keyRelease(code);
-					robo.keyRelease(KeyEvent.VK_SHIFT);
-					
-				}
-				else
-				{
-					robo.keyPress(code);
-					robo.setAutoDelay(20);
-					robo.keyRelease(code);
-				}
-							
-				
-			}
-			robo.setAutoDelay(20);
-			robo.keyPress(KeyEvent.VK_TAB);
-			robo.keyRelease(KeyEvent.VK_TAB);
-			
-			
-		} catch (AWTException e) 
-		{
-			Reporter.log("Exception Inside typeData method while entering authentication data",true);
-		}
-		
-	}
-	public static void pressEnterBtn()
-	{
-		Robot robo;
-		try {
-			robo = new Robot();
-			robo.keyPress(KeyEvent.VK_ENTER);
-			robo.keyRelease(KeyEvent.VK_ENTER);
-			
-		} catch (AWTException e) 
-		{
-			e.printStackTrace();
-		}	
 	}
 	public static void forceSleep(int timeInMilliSec)
 	{
