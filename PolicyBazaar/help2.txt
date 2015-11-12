@@ -1,4 +1,23 @@
 @BeforeSuite
 public void StartAppiumServer() throws IOException
 {
-try { extent = new ExtentReports("./ExtentReport/AutomationReport.html"); ExtentTest test = extent.startTest("Starting Appium Server", "Under Suite"); extent.addSystemInfo("Selenium Version", "2.47.1"); extent.addSystemInfo("Environment", "Prod"); //ExtentTest logger=report.startTest("Start Appium Server"); //ExtentTest test = report.startTest("Start Logs", "Sample description"); startLogs(); if(config.getProperty("RunAppiumFromCode").equalsIgnoreCase("yes")) { if(config.getProperty("RunAppiumFromOldCode").equalsIgnoreCase("yes")) { System.out.println("Appium Server Starting with older way"); test.log(LogStatus.INFO,"Appium Server Starting with older way"); StartAndStopAppiumServerWithOldCode.startAppiumServerWithOldCode(); } else { System.out.println("Appium Server Starting with newly Implemented way"); test.log(LogStatus.INFO,"Appium Server Starting with newly
+try 
+	{ 
+		extent = new ExtentReports("./ExtentReport/AutomationReport.html"); 
+		ExtentTest test = extent.startTest("Starting Appium Server", "Under Suite"); 
+		extent.addSystemInfo("Selenium Version", "2.47.1"); 
+		extent.addSystemInfo("Environment", "Prod"); 
+		//ExtentTest logger=report.startTest("Start Appium Server"); 
+		//ExtentTest test = report.startTest("Start Logs", "Sample description"); 
+		startLogs(); if(config.getProperty("RunAppiumFromCode").equalsIgnoreCase("yes")) 
+		{ 
+			if(config.getProperty("RunAppiumFromOldCode").equalsIgnoreCase("yes")) 
+			{ 
+				System.out.println("Appium Server Starting with older way");
+				 test.log(LogStatus.INFO,"Appium Server Starting with older way"); 
+				 StartAndStopAppiumServerWithOldCode.startAppiumServerWithOldCode(); 
+			} 
+			else 
+			{ 
+				System.out.println("Appium Server Starting with newly Implemented way"); 
+				test.log(LogStatus.INFO,"Appium Server Starting with newly

@@ -1,1 +1,14 @@
-@FindBy(id="com.policybazaar:id/comparepolicy_twowheelerId") private WebElement comparePolicyTwoWheeler; @FindBy(id="com.policybazaar:id/comparepolicy_carinsurenceId") private WebElement comparePolicyCarInsurence; @FindBy(id="com.policybazaar:id/comparepolicy_term_Insurence") private WebElement comparePolicyTermInsurence; @FindBy(id="com.policybazaar:id/comparepolicy_investment") private WebElement comparePolicyInvestment; @FindBy(id="com.policybazaar:id/comparepolicy_health") private WebElement comparePolicyHealth;
+@FindBy(id="com.policybazaar:id/comparepolicy_twowheelerId") 
+private WebElement comparePolicyTwoWheeler; 
+
+@FindBy(id="com.policybazaar:id/comparepolicy_carinsurenceId") 
+private WebElement comparePolicyCarInsurence; 
+
+@FindBy(id="com.policybazaar:id/comparepolicy_term_Insurence") 
+private WebElement comparePolicyTermInsurence; 
+
+@FindBy(id="com.policybazaar:id/comparepolicy_investment") 
+private WebElement comparePolicyInvestment; 
+
+@FindBy(id="com.policybazaar:id/comparepolicy_health") 
+private WebElement comparePolicyHealth;
