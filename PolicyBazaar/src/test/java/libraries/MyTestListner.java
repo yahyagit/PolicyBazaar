@@ -14,7 +14,7 @@ public class MyTestListner extends TestListenerAdapter
 	public void onTestFailure(ITestResult arg0) 
 	{
 				
-		File scrFile = ((TakesScreenshot)SuperTestNG.driver).getScreenshotAs(OutputType.FILE);
+		File scrFile = ((TakesScreenshot)SuperAppium.driver).getScreenshotAs(OutputType.FILE);
 		// Now you can do whatever you need to do with it, for example copy somewhere
 		try {
 			FileUtils.copyFile(scrFile, new File("./screenshots/"+"/failed/"+"_failed"+arg0.getStatus()+".png"));
@@ -25,7 +25,7 @@ public class MyTestListner extends TestListenerAdapter
 	}
 	public void onTestSuccess(ITestResult arg0)
 	{		
-		File scrFile = ((TakesScreenshot)SuperTestNG.driver).getScreenshotAs(OutputType.FILE);
+		File scrFile = ((TakesScreenshot)SuperAppium.driver).getScreenshotAs(OutputType.FILE);
 		// Now you can do whatever you need to do with it, for example copy somewhere
 		try {
 			FileUtils.copyFile(scrFile, new File("./screenshots/"+"_passed"+arg0.getStatus()+".png"));

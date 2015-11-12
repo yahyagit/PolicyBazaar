@@ -7,12 +7,15 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
@@ -23,7 +26,7 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
  * Created on : 11/12/2015
  */
 
-public class SuperTestNG 
+public class SuperAppium 
 {
 	public static AppiumDriverLocalService service;
 	public static String nodejsexefilepath = "C:/Program Files/nodejs/node.exe";
@@ -70,6 +73,17 @@ public class SuperTestNG
 		  		if(!service.isRunning())
 		  		System.out.println("Server stopped");
 	  	}
+		
+		public static void LongPress(AndroidDriver driver, WebElement element) 
+	    { 
+	        TouchAction del=new TouchAction(driver);
+	        del.longPress(element).perform();  
+	    }
+		
+		public static void zoom(AndroidDriver driver, MobileElement element)
+		{
+			element.zoom();
+		}
 
 	@AfterMethod(alwaysRun=true)
 	public void postCondition()

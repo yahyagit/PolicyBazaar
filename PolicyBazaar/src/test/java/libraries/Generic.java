@@ -233,7 +233,7 @@ public class Generic
 	public static void waitForElementToClick(WebDriver driver, WebElement element)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 30);
-		wait.withTimeout(SuperTestNG.implicitlyWait, TimeUnit.SECONDS).pollingEvery(100, TimeUnit.MILLISECONDS).ignoring(StaleElementReferenceException.class);
+		wait.withTimeout(SuperAppium.implicitlyWait, TimeUnit.SECONDS).pollingEvery(100, TimeUnit.MILLISECONDS).ignoring(StaleElementReferenceException.class);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
@@ -280,12 +280,12 @@ public class Generic
 	
 	public static void nullifyImplicitlyWait()
 	{
-		SuperTestNG.driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		SuperAppium.driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 	}
 	
 	public static void enableImplicitlyWait()
 	{
-		SuperTestNG.driver.manage().timeouts().implicitlyWait(SuperTestNG.implicitlyWait, TimeUnit.SECONDS);
+		SuperAppium.driver.manage().timeouts().implicitlyWait(SuperAppium.implicitlyWait, TimeUnit.SECONDS);
 	}
 	
 	public static boolean waitForElement(final WebElement element)
