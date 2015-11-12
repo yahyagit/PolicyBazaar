@@ -265,36 +265,6 @@ public class Generic
 		Assert.assertEquals(actualTxt, obtainedTxt);
 	}
 	
-	public static String selectvalueFromDropDownBySelectClass(WebElement we,String actual)
-	{
-		String selected = null;
-		int index = -1;
-		try
-		{
-			
-			List<WebElement> list = new Select(we).getOptions();
-			int count = list.size();
-			
-			for(int i=0; i<count;i++)
-			{
-				String obtained = list.get(i).getText();
-				if(actual.equals(obtained))
-				{
-					index=i;
-					selected=obtained;
-					break;
-				}
-			}
-			list.get(index).click();
-			Generic.forceSleep(2000);
-			
-		}catch(Exception e)
-		{
-			Reporter.log("Exception occured in selecting data from drop down"+e.toString(),true);
-		}
-		return selected;
-	}
-	
 	public static void waitForPageLoad(WebDriver driver)
 	{
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
@@ -307,10 +277,6 @@ public class Generic
 		Assert.fail(message);
 	}
 	
-	public static void captureScreenshot()
-	{
-		
-	}
 	
 	public static void nullifyImplicitlyWait()
 	{
@@ -478,18 +444,5 @@ public class Generic
 		{
 			e.printStackTrace();
 		}
-	}
-	public static int randomNumberGenerator()
-	{
-		int num;
-		Random random = new Random();
-		num=random.nextInt(1000);
-		return num;
-	}
-	
-	public static String alterEmailId(String email)
-	{
-		StringTokenizer st = new StringTokenizer(email, "@");
-		return ((String) st.nextElement()+randomNumberGenerator()+"@"+st.nextElement());		
 	}		
 }
