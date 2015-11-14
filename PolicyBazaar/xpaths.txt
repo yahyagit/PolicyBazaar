@@ -1,0 +1,32 @@
+
+Main Page
+My Account: id= "com.policybazaar:id/dashboard_loginStatus"
+Compare Policies id= "com.policybazaar:id/textView1"
+Hospital & Garage Locator = "com.policybazaar:id/textView3"
+Drive-Wise id="com.policybazaar:id/textView5"
+
+Notification icon = "com.policybazaar:id/notificationIcon"
+
+com.policybazaar:id/indicator
+
+com.policybazaar:id/bannerViewPager --- car
+
+My Account
+
+My Policies:"com.policybazaar:id/id_mypolic"
+
+My Documents:"com.policybazaar:id/idcom_vehicledetail"
+
+view:"com.policybazaar:id/idcom_mywallet"
+upload: "com.policybazaar:id/idcom_mywalletUpload"
+
+
+
+
+Motor Insta Renewal:"com.policybazaar:id/motor_insta_Renewal"
+
+Track Application:"com.policybazaar:id/idcom_trackapplication"
+
+My Profile:"com.policybazaar:id/idcom_myprofile"
+
+Sync Account:"com.policybazaar:id/idcom_sync"

@@ -1,0 +1,745 @@
+2015-11-14 21:12:44:181 - warn: Appium support for versions of node < 0.12 has been deprecated and will be removed in a future version. Please upgrade!
+2015-11-14 21:12:44:412 - info: Welcome to Appium v1.4.13 (REV c75d8adcb66a75818a542fe1891a34260c21f76a)
+2015-11-14 21:12:44:412 - info: Appium REST http interface listener started on 127.0.0.1:4747
+2015-11-14 21:12:44:418 - info: [debug] Non-default server args: {"address":"127.0.0.1","port":4747,"log":"G:\\appium\\maven.1447530390938\\PolicyBazaar\\logs\\AppiumServerLogs.txt"}
+2015-11-14 21:12:44:419 - info: Console LogLevel: debug
+2015-11-14 21:12:44:419 - info: File LogLevel: debug
+2015-11-14 21:12:44:740 - info: --> GET /wd/hub/status {}
+2015-11-14 21:12:44:742 - info: [debug] Responding to client with success: {"status":0,"value":{"build":{"version":"1.4.13","revision":"c75d8adcb66a75818a542fe1891a34260c21f76a"}}}
+2015-11-14 21:12:44:751 - info: <-- GET /wd/hub/status 200 11.681 ms - 105 {"status":0,"value":{"build":{"version":"1.4.13","revision":"c75d8adcb66a75818a542fe1891a34260c21f76a"}}}
+2015-11-14 21:12:44:904 - info: --> GET /wd/hub/status {}
+2015-11-14 21:12:44:904 - info: [debug] Responding to client with success: {"status":0,"value":{"build":{"version":"1.4.13","revision":"c75d8adcb66a75818a542fe1891a34260c21f76a"}}}
+2015-11-14 21:12:44:906 - info: <-- GET /wd/hub/status 200 2.772 ms - 105 {"status":0,"value":{"build":{"version":"1.4.13","revision":"c75d8adcb66a75818a542fe1891a34260c21f76a"}}}
+2015-11-14 21:12:46:617 - info: --> POST /wd/hub/session {"desiredCapabilities":{"platformName":"Android","deviceName":"ca18b445","appActivity":"com.policybazaar.login.Splash_DashBoard","appPackage":"com.policybazaar"}}
+2015-11-14 21:12:46:618 - info: Client User-Agent string: Apache-HttpClient/4.3.4 (java 1.5)
+2015-11-14 21:12:46:622 - info: [debug] Didn't get app but did get Android package, will attempt to launch it on the device
+2015-11-14 21:12:46:624 - info: [debug] Creating new appium session cf9ffb29-3424-4451-b83f-6b69d4fbd24d
+2015-11-14 21:12:46:625 - info: Starting android appium
+2015-11-14 21:12:46:627 - info: [debug] Getting Java version
+2015-11-14 21:12:47:093 - info: Java version is: 1.7.0_07
+2015-11-14 21:12:47:095 - info: [debug] Checking whether adb is present
+2015-11-14 21:12:47:130 - info: [debug] Using adb from D:\Android SDK\sdk\platform-tools\adb.exe
+2015-11-14 21:12:47:130 - warn: No app capability, can't parse package/activity
+2015-11-14 21:12:47:133 - info: [debug] Using fast reset? true
+2015-11-14 21:12:47:133 - info: [debug] Preparing device for session
+2015-11-14 21:12:47:134 - info: [debug] Not checking whether app is present since we are assuming it's already on the device
+2015-11-14 21:12:47:135 - info: Retrieving device
+2015-11-14 21:12:47:135 - info: [debug] Trying to find a connected android device
+2015-11-14 21:12:47:137 - info: [debug] Getting connected devices...
+2015-11-14 21:12:47:140 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" devices
+2015-11-14 21:12:47:392 - info: [debug] 1 device(s) connected
+2015-11-14 21:12:47:393 - info: Found device ca18b445
+2015-11-14 21:12:47:393 - info: [debug] Setting device id to ca18b445
+2015-11-14 21:12:47:394 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2015-11-14 21:12:47:395 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 wait-for-device
+2015-11-14 21:12:47:479 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "echo 'ready'"
+2015-11-14 21:12:47:618 - info: [debug] Starting logcat capture
+2015-11-14 21:12:47:722 - info: [debug] Getting device API level
+2015-11-14 21:12:47:723 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "getprop ro.build.version.sdk"
+2015-11-14 21:12:47:864 - info: [debug] Device is at API Level 22
+2015-11-14 21:12:47:865 - info: Device API level is: 22
+2015-11-14 21:12:47:865 - info: [debug] Extracting strings for language: default
+2015-11-14 21:12:47:866 - info: [debug] Apk doesn't exist locally
+2015-11-14 21:12:47:866 - info: [debug] Could not get strings, but it looks like we had an old strings file anyway, so ignoring
+2015-11-14 21:12:47:867 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "rm -rf /data/local/tmp/strings.json"
+2015-11-14 21:12:48:010 - info: [debug] Not uninstalling app since server not started with --full-reset
+2015-11-14 21:12:48:011 - info: [debug] Skipping install since we launched with a package instead of an app path
+2015-11-14 21:12:48:011 - info: [debug] Forwarding system:4724 to device:4724
+2015-11-14 21:12:48:011 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 forward tcp:4724 tcp:4724
+2015-11-14 21:12:48:095 - info: [debug] Pushing appium bootstrap to device...
+2015-11-14 21:12:48:141 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 push "G:\\appium\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2015-11-14 21:12:48:302 - info: [debug] Pushing settings apk to device...
+2015-11-14 21:12:48:332 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 install "G:\appium\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+2015-11-14 21:12:49:916 - info: [debug] Pushing unlock helper app to device...
+2015-11-14 21:12:49:944 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 install "G:\appium\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+2015-11-14 21:12:51:030 - info: Starting App
+2015-11-14 21:12:51:030 - info: [debug] Attempting to kill all 'uiautomator' processes
+2015-11-14 21:12:51:032 - info: [debug] Getting all processes with 'uiautomator'
+2015-11-14 21:12:51:033 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "ps 'uiautomator'"
+2015-11-14 21:12:51:250 - info: [debug] No matching processes found
+2015-11-14 21:12:51:251 - info: [debug] Running bootstrap
+2015-11-14 21:12:51:251 - info: [debug] spawning: D:\Android SDK\sdk\platform-tools\adb.exe -s ca18b445 shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.policybazaar -e disableAndroidWatchers false
+2015-11-14 21:13:15:270 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2015-11-14 21:13:15:412 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2015-11-14 21:13:15:413 - info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+2015-11-14 21:13:15:413 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2015-11-14 21:13:15:414 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2015-11-14 21:13:15:416 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2015-11-14 21:13:15:416 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2015-11-14 21:13:15:417 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+2015-11-14 21:13:15:481 - info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+2015-11-14 21:13:15:481 - info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+2015-11-14 21:13:15:481 - info: [debug] [BOOTSTRAP] [debug] Loading json...
+2015-11-14 21:13:15:482 - info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+2015-11-14 21:13:15:510 - info: [debug] Waking up device if it's not alive
+2015-11-14 21:13:15:511 - info: [debug] Pushing command to appium work queue: ["wake",{}]
+2015-11-14 21:13:15:534 - info: [debug] [BOOTSTRAP] [debug] Client connected
+2015-11-14 21:13:15:563 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+2015-11-14 21:13:15:563 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:15:565 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "dumpsys window"
+2015-11-14 21:13:15:586 - info: [debug] [BOOTSTRAP] [debug] Got command action: wake
+2015-11-14 21:13:15:587 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2015-11-14 21:13:15:771 - info: [debug] Screen already unlocked, continuing.
+2015-11-14 21:13:15:771 - info: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+2015-11-14 21:13:15:776 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+2015-11-14 21:13:15:776 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:15:776 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+2015-11-14 21:13:15:776 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"\/data\/local\/tmp"}
+2015-11-14 21:13:15:777 - info: [debug] dataDir set to: /data/local/tmp
+2015-11-14 21:13:15:777 - info: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+2015-11-14 21:13:15:780 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+2015-11-14 21:13:15:782 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:15:783 - info: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+2015-11-14 21:13:15:785 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":false}
+2015-11-14 21:13:15:786 - info: [debug] Getting device API level
+2015-11-14 21:13:15:787 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "getprop ro.build.version.sdk"
+2015-11-14 21:13:15:890 - info: [debug] Device is at API Level 22
+2015-11-14 21:13:15:891 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.policybazaar/com.policybazaar.login.Splash_DashBoard"
+2015-11-14 21:13:16:949 - info: [debug] Waiting for pkg "com.policybazaar" and activity "com.policybazaar.login.Splash_DashBoard" to be focused
+2015-11-14 21:13:16:950 - info: [debug] Getting focused package and activity
+2015-11-14 21:13:16:951 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "dumpsys window windows"
+2015-11-14 21:13:17:094 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "getprop ro.build.version.release"
+2015-11-14 21:13:17:205 - info: [debug] Device is at release version 5.1.1
+2015-11-14 21:13:17:206 - info: [debug] Device launched! Ready for commands
+2015-11-14 21:13:17:206 - info: [debug] Setting command timeout to the default of 60 secs
+2015-11-14 21:13:17:207 - info: [debug] Appium session started with sessionId cf9ffb29-3424-4451-b83f-6b69d4fbd24d
+2015-11-14 21:13:17:209 - info: <-- POST /wd/hub/session 303 31324.014 ms - 74 
+2015-11-14 21:13:17:367 - info: --> GET /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d {}
+2015-11-14 21:13:17:368 - info: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"5.1.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"ca18b445","appActivity":"com.policybazaar.login.Splash_DashBoard","appPackage":"com.policybazaar"},"platformName":"Android","deviceName":"ca18b445","appActivity":"com.policybazaar.login.Splash_DashBoard","appPackage":"com.policybazaar"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:17:370 - info: <-- GET /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d 200 2.941 ms - 603 {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"5.1.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"ca18b445","appActivity":"com.policybazaar.login.Splash_DashBoard","appPackage":"com.policybazaar"},"platformName":"Android","deviceName":"ca18b445","appActivity":"com.policybazaar.login.Splash_DashBoard","appPackage":"com.policybazaar"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:17:549 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/timeouts {"type":"implicit","ms":20000}
+2015-11-14 21:13:17:556 - info: [debug] Set Android implicit wait to 20000ms
+2015-11-14 21:13:17:557 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:17:558 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/timeouts 200 8.794 ms - 76 {"status":0,"value":null,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:17:604 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element {"using":"id","value":"com.policybazaar:id/mobile_number_edittext"}
+2015-11-14 21:13:17:606 - info: [debug] Waiting up to 20000ms for condition
+2015-11-14 21:13:17:607 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/mobile_number_edittext","context":"","multiple":false}]
+2015-11-14 21:13:17:617 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/mobile_number_edittext","context":"","multiple":false}}
+2015-11-14 21:13:17:618 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:17:618 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:17:618 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/mobile_number_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:17:619 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Using:
+2015-11-14 21:13:17:619 - info: [debug] [UIAUTOMATOR STDOUT] UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/mobile_number_edittext][/APPIUM-UIAUTO]
+2015-11-14 21:13:17:635 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:17:638 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/mobile_number_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:17:638 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/mobile_number_edittext]
+2015-11-14 21:13:17:641 - info: [debug] Waited for 35ms so far
+2015-11-14 21:13:17:644 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:18:147 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/mobile_number_edittext","context":"","multiple":false}]
+2015-11-14 21:13:18:151 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/mobile_number_edittext","context":"","multiple":false}}
+2015-11-14 21:13:18:151 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:18:152 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:18:154 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/mobile_number_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:18:156 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/mobile_number_edittext]
+2015-11-14 21:13:18:464 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+2015-11-14 21:13:18:466 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"1"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:18:467 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element 200 863.705 ms - 87 {"status":0,"value":{"ELEMENT":"1"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:18:484 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/1/value {"id":"1","value":["9663514114"]}
+2015-11-14 21:13:18:485 - info: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"1","text":"9663514114","replace":false}]
+2015-11-14 21:13:18:489 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"1","text":"9663514114","replace":false}}
+2015-11-14 21:13:18:489 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:18:490 - info: [debug] [BOOTSTRAP] [debug] Got command action: setText
+2015-11-14 21:13:18:490 - info: [debug] [BOOTSTRAP] [debug] Using element passed in.
+2015-11-14 21:13:18:976 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2015-11-14 21:13:21:455 - info: [debug] [BOOTSTRAP] [debug] Text remains after clearing, but it appears to be hint text.
+2015-11-14 21:13:21:516 - info: [debug] [BOOTSTRAP] [debug] Text not cleared. Assuming remainder is hint text.
+2015-11-14 21:13:21:520 - info: [debug] [BOOTSTRAP] [debug] Sending plain text to element: 9663514114
+2015-11-14 21:13:24:142 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2015-11-14 21:13:24:143 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:24:145 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/1/value 200 5661.367 ms - 76 {"status":0,"value":true,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:24:161 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/timeouts {"type":"implicit","ms":20000}
+2015-11-14 21:13:24:161 - info: [debug] Set Android implicit wait to 20000ms
+2015-11-14 21:13:24:162 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:24:163 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/timeouts 200 2.728 ms - 76 {"status":0,"value":null,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:24:176 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element {"using":"id","value":"com.policybazaar:id/mobile_num_submit_button"}
+2015-11-14 21:13:24:177 - info: [debug] Waiting up to 20000ms for condition
+2015-11-14 21:13:24:177 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/mobile_num_submit_button","context":"","multiple":false}]
+2015-11-14 21:13:24:182 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/mobile_num_submit_button","context":"","multiple":false}}
+2015-11-14 21:13:24:183 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:24:183 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:24:183 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/mobile_num_submit_button using ID with the contextId:  multiple: false
+2015-11-14 21:13:24:183 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/mobile_num_submit_button]
+2015-11-14 21:13:24:673 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+2015-11-14 21:13:24:674 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"2"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:24:676 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element 200 499.966 ms - 87 {"status":0,"value":{"ELEMENT":"2"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:24:685 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/2/click {"id":"2"}
+2015-11-14 21:13:24:686 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"2"}]
+2015-11-14 21:13:24:690 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+2015-11-14 21:13:24:691 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:24:691 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2015-11-14 21:13:24:994 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2015-11-14 21:13:24:997 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:24:998 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/2/click 200 312.991 ms - 76 {"status":0,"value":true,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:33:018 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/appium/device/start_activity {"appPackage":"com.android.mms","appActivity":"com.android.mms.ui.ConversationList","appWaitPackage":"","appWaitActivity":""}
+2015-11-14 21:13:33:022 - info: [debug] Getting device API level
+2015-11-14 21:13:33:023 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "getprop ro.build.version.sdk"
+2015-11-14 21:13:33:183 - info: [debug] Device is at API Level 22
+2015-11-14 21:13:33:183 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "am start -S -n com.android.mms/com.android.mms.ui.ConversationList"
+2015-11-14 21:13:34:139 - info: [debug] Responding to client with success: {"status":0,"value":"Successfully launched the app.","sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:34:140 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/appium/device/start_activity 200 1122.411 ms - 104 {"status":0,"value":"Successfully launched the app.","sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:34:159 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element {"using":"id","value":"android:id/list"}
+2015-11-14 21:13:34:160 - info: [debug] Waiting up to 20000ms for condition
+2015-11-14 21:13:34:160 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"android:id/list","context":"","multiple":false}]
+2015-11-14 21:13:34:165 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"android:id/list","context":"","multiple":false}}
+2015-11-14 21:13:34:166 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:34:166 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:34:166 - info: [debug] [BOOTSTRAP] [debug] Finding android:id/list using ID with the contextId:  multiple: false
+2015-11-14 21:13:34:166 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/list]
+2015-11-14 21:13:34:809 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+2015-11-14 21:13:34:810 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"3"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:34:811 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element 200 651.808 ms - 87 {"status":0,"value":{"ELEMENT":"3"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:34:821 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/3/elements {"id":"3","using":"id","value":"com.android.mms:id/subject"}
+2015-11-14 21:13:34:822 - info: [debug] Waiting up to 20000ms for condition
+2015-11-14 21:13:34:823 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.android.mms:id/subject","context":"3","multiple":true}]
+2015-11-14 21:13:34:827 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.android.mms:id/subject","context":"3","multiple":true}}
+2015-11-14 21:13:34:827 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:34:828 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:34:839 - info: [debug] [BOOTSTRAP] [debug] Finding com.android.mms:id/subject using ID with the contextId: 3 multiple: true
+2015-11-14 21:13:34:839 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.android.mms:id/subject]
+2015-11-14 21:13:34:839 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.android.mms:id/subject]
+2015-11-14 21:13:34:840 - info: [debug] [BOOTSTRAP] [debug] Element[3] is 3, counter: 0
+2015-11-14 21:13:35:223 - info: [debug] [BOOTSTRAP] [debug] Element[3] is 3, counter: 1
+2015-11-14 21:13:35:242 - info: [debug] [BOOTSTRAP] [debug] Element[3] is 3, counter: 2
+2015-11-14 21:13:35:285 - info: [debug] [BOOTSTRAP] [debug] Element[3] is 3, counter: 3
+2015-11-14 21:13:35:308 - info: [debug] [BOOTSTRAP] [debug] Element[3] is 3, counter: 4
+2015-11-14 21:13:35:329 - info: [debug] [BOOTSTRAP] [debug] Element[3] is 3, counter: 5
+2015-11-14 21:13:35:340 - info: [debug] [BOOTSTRAP] [debug] Element[3] is 3, counter: 6
+2015-11-14 21:13:35:371 - info: [debug] [BOOTSTRAP] [debug] Element[3] is 3, counter: 7
+2015-11-14 21:13:35:405 - info: [debug] [BOOTSTRAP] [debug] Element[3] is 3, counter: 8
+2015-11-14 21:13:35:728 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"4"},{"ELEMENT":"5"},{"ELEMENT":"6"},{"ELEMENT":"7"},{"ELEMENT":"8"},{"ELEMENT":"9"},{"ELEMENT":"10"},{"ELEMENT":"11"}]}
+2015-11-14 21:13:35:728 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"4"},{"ELEMENT":"5"},{"ELEMENT":"6"},{"ELEMENT":"7"},{"ELEMENT":"8"},{"ELEMENT":"9"},{"ELEMENT":"10"},{"ELEMENT":"11"}],"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:35:730 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/3/elements 200 908.626 ms - 203 {"status":0,"value":[{"ELEMENT":"4"},{"ELEMENT":"5"},{"ELEMENT":"6"},{"ELEMENT":"7"},{"ELEMENT":"8"},{"ELEMENT":"9"},{"ELEMENT":"10"},{"ELEMENT":"11"}],"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:35:768 - info: --> GET /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/4/text {}
+2015-11-14 21:13:35:769 - info: [debug] Pushing command to appium work queue: ["element:getText",{"elementId":"4"}]
+2015-11-14 21:13:35:778 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"4"}}
+2015-11-14 21:13:35:779 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:35:779 - info: [debug] [BOOTSTRAP] [debug] Got command action: getText
+2015-11-14 21:13:35:868 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"Dear Inbound, 7268 is your verification code as requested online, this code is valid for entire day. Enter the code to compare and save. Regards, Policybazaar."}
+2015-11-14 21:13:35:869 - info: [debug] Responding to client with success: {"status":0,"value":"Dear Inbound, 7268 is your verification code as requested online, this code is valid for entire day. Enter the code to compare and save. Regards, Policybazaar.","sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:35:871 - info: <-- GET /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/4/text 200 103.556 ms - 233 {"status":0,"value":"Dear Inbound, 7268 is your verification code as requested online, this code is valid for entire day. Enter the code to compare and save. Regards, Policybazaar.","sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:35:881 - info: --> GET /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/4/text {}
+2015-11-14 21:13:35:882 - info: [debug] Pushing command to appium work queue: ["element:getText",{"elementId":"4"}]
+2015-11-14 21:13:35:885 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"4"}}
+2015-11-14 21:13:35:886 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:35:886 - info: [debug] [BOOTSTRAP] [debug] Got command action: getText
+2015-11-14 21:13:35:947 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"Dear Inbound, 7268 is your verification code as requested online, this code is valid for entire day. Enter the code to compare and save. Regards, Policybazaar."}
+2015-11-14 21:13:35:948 - info: [debug] Responding to client with success: {"status":0,"value":"Dear Inbound, 7268 is your verification code as requested online, this code is valid for entire day. Enter the code to compare and save. Regards, Policybazaar.","sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:35:956 - info: <-- GET /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/4/text 200 75.115 ms - 233 {"status":0,"value":"Dear Inbound, 7268 is your verification code as requested online, this code is valid for entire day. Enter the code to compare and save. Regards, Policybazaar.","sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:35:968 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/appium/device/start_activity {"appPackage":"com.policybazaar","appActivity":"com.policybazaar.login.Splash_DashBoard","appWaitPackage":"","appWaitActivity":""}
+2015-11-14 21:13:35:971 - info: [debug] Getting device API level
+2015-11-14 21:13:35:972 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "getprop ro.build.version.sdk"
+2015-11-14 21:13:36:189 - info: [debug] Device is at API Level 22
+2015-11-14 21:13:36:189 - info: [debug] executing cmd: "D:\Android SDK\sdk\platform-tools\adb.exe" -s ca18b445 shell "am start -S -n com.policybazaar/com.policybazaar.login.Splash_DashBoard"
+2015-11-14 21:13:37:279 - info: [debug] Responding to client with success: {"status":0,"value":"Successfully launched the app.","sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:37:280 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/appium/device/start_activity 200 1312.604 ms - 104 {"status":0,"value":"Successfully launched the app.","sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:37:289 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element {"using":"id","value":"com.policybazaar:id/dashboard_loginStatus"}
+2015-11-14 21:13:37:290 - info: [debug] Waiting up to 20000ms for condition
+2015-11-14 21:13:37:291 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}]
+2015-11-14 21:13:37:295 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}}
+2015-11-14 21:13:37:295 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:37:296 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:37:296 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:37:296 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:37:637 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:37:638 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:37:638 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:37:647 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:37:648 - info: [debug] Waited for 358ms so far
+2015-11-14 21:13:38:154 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}]
+2015-11-14 21:13:38:157 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}}
+2015-11-14 21:13:38:158 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:38:158 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:38:158 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:38:158 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:38:161 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:38:161 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:38:161 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:38:175 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:38:176 - info: [debug] Waited for 886ms so far
+2015-11-14 21:13:38:676 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}]
+2015-11-14 21:13:38:682 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}}
+2015-11-14 21:13:38:682 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:38:682 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:38:683 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:38:683 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:38:848 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:38:849 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:38:849 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:39:356 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:39:356 - info: [debug] Waited for 2066ms so far
+2015-11-14 21:13:39:862 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}]
+2015-11-14 21:13:39:866 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}}
+2015-11-14 21:13:39:866 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:39:866 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:39:867 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:39:867 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:39:899 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:39:899 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:39:900 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:40:241 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:40:242 - info: [debug] Waited for 2952ms so far
+2015-11-14 21:13:40:751 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}]
+2015-11-14 21:13:40:757 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}}
+2015-11-14 21:13:40:757 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:40:757 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:40:757 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:40:758 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Using: Ui
+2015-11-14 21:13:40:758 - info: [debug] [UIAUTOMATOR STDOUT] Selector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus][/APPIUM-UIAUTO]
+2015-11-14 21:13:40:935 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:40:936 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:40:936 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:40:968 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:40:970 - info: [debug] Waited for 3680ms so far
+2015-11-14 21:13:41:470 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}]
+2015-11-14 21:13:41:476 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}}
+2015-11-14 21:13:41:476 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:41:477 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:41:477 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:41:477 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:41:647 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:41:648 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:41:650 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:41:677 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:41:680 - info: [debug] Waited for 4389ms so far
+2015-11-14 21:13:42:177 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}]
+2015-11-14 21:13:42:184 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}}
+2015-11-14 21:13:42:184 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:42:184 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:42:185 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:42:185 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:42:468 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:42:468 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:42:471 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus]
+2015-11-14 21:13:42:568 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:42:570 - info: [debug] Waited for 5280ms so far
+2015-11-14 21:13:43:077 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}]
+2015-11-14 21:13:43:083 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/dashboard_loginStatus","context":"","multiple":false}}
+2015-11-14 21:13:43:083 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:43:084 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:43:084 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/dashboard_loginStatus using ID with the contextId:  multiple: false
+2015-11-14 21:13:43:084 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Using: Ui
+2015-11-14 21:13:43:085 - info: [debug] [UIAUTOMATOR STDOUT] Selector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/dashboard_loginStatus][/APPIUM-UIAUTO]
+2015-11-14 21:13:43:218 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"12"}}
+2015-11-14 21:13:43:219 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"12"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:43:220 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element 200 5929.957 ms - 88 {"status":0,"value":{"ELEMENT":"12"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:43:231 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/12/click {"id":"12"}
+2015-11-14 21:13:43:232 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"12"}]
+2015-11-14 21:13:43:236 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"12"}}
+2015-11-14 21:13:43:237 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:43:237 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2015-11-14 21:13:43:422 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2015-11-14 21:13:43:424 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:43:427 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/12/click 200 195.492 ms - 76 {"status":0,"value":true,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:13:43:437 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element {"using":"id","value":"com.policybazaar:id/otp_edittext"}
+2015-11-14 21:13:43:438 - info: [debug] Waiting up to 20000ms for condition
+2015-11-14 21:13:43:438 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:43:445 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:43:445 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:43:445 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:43:446 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:43:446 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:44:202 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:44:203 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:44:203 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:44:217 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:44:220 - info: [debug] Waited for 782ms so far
+2015-11-14 21:13:44:730 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:44:734 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:44:735 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:44:735 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:44:735 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:44:735 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Using: UiSelector[INSTANCE=
+2015-11-14 21:13:44:736 - info: [debug] [UIAUTOMATOR STDOUT] 0, RESOURCE_ID=com.policybazaar:id/otp_edittext][/APPIUM-UIAUTO]
+2015-11-14 21:13:44:779 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:44:779 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:44:779 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:44:792 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:44:794 - info: [debug] Waited for 1356ms so far
+2015-11-14 21:13:45:303 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:45:308 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:45:308 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:45:308 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:45:308 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:45:309 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:45:521 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:45:522 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:45:522 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:45:591 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:45:591 - info: [debug] Waited for 2153ms so far
+2015-11-14 21:13:46:105 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:46:111 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:46:111 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:46:111 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:46:117 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:46:118 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:46:138 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:46:140 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:46:140 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:46:203 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:46:206 - info: [debug] Waited for 2767ms so far
+2015-11-14 21:13:46:706 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:46:711 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:46:711 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:46:711 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:46:711 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:46:712 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:46:841 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:46:843 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:46:844 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:46:876 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:46:877 - info: [debug] Waited for 3439ms so far
+2015-11-14 21:13:47:382 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:47:387 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:47:388 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:47:391 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:47:396 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:47:397 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:47:451 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:47:462 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:47:463 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:47:486 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:47:489 - info: [debug] Waited for 4051ms so far
+2015-11-14 21:13:47:990 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:47:996 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:47:996 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:47:996 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:47:996 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:47:997 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:48:158 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:48:161 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:48:161 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:48:267 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:48:285 - info: [debug] Waited for 4847ms so far
+2015-11-14 21:13:48:786 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:48:794 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:48:794 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:48:794 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:48:795 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:48:795 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Using: UiSelector[INSTANCE=
+2015-11-14 21:13:48:795 - info: [debug] [UIAUTOMATOR STDOUT] 0, RESOURCE_ID=com.policybazaar:id/otp_edittext][/APPIUM-UIAUTO]
+2015-11-14 21:13:48:831 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:48:835 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:48:838 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:49:051 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:49:053 - info: [debug] Waited for 5615ms so far
+2015-11-14 21:13:49:566 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:49:577 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:49:579 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:49:580 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:49:581 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:49:584 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:49:622 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:49:624 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:49:627 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:49:702 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:49:705 - info: [debug] Waited for 6267ms so far
+2015-11-14 21:13:50:208 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:50:213 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:50:214 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:50:214 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:50:214 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:50:214 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Using: UiSelector[INSTANCE=
+2015-11-14 21:13:50:215 - info: [debug] [UIAUTOMATOR STDOUT] 0, RESOURCE_ID=com.policybazaar:id/otp_edittext][/APPIUM-UIAUTO]
+2015-11-14 21:13:50:249 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:50:250 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:50:251 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:50:362 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:50:364 - info: [debug] Waited for 6926ms so far
+2015-11-14 21:13:50:876 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:50:881 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:50:882 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:50:882 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:50:882 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:50:882 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:51:085 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:51:130 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:51:131 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:51:134 - info: [debug] Waited for 7695ms so far
+2015-11-14 21:13:51:135 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:51:641 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:51:645 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:51:647 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:51:648 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:51:648 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:51:653 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:51:712 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:51:715 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:51:715 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:51:741 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:51:743 - info: [debug] Waited for 8305ms so far
+2015-11-14 21:13:52:246 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:52:252 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:52:252 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:52:252 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:52:253 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:52:253 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:52:292 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:52:294 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:52:296 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:52:347 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:52:350 - info: [debug] Waited for 8911ms so far
+2015-11-14 21:13:52:857 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:52:862 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:52:863 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:52:863 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:52:863 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:52:863 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:52:989 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:52:992 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:52:994 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:53:040 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:53:043 - info: [debug] Waited for 9604ms so far
+2015-11-14 21:13:53:544 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:53:551 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:53:551 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:53:551 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:53:554 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:53:554 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:53:746 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:53:752 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:53:761 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:53:818 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:53:818 - info: [debug] Waited for 10380ms so far
+2015-11-14 21:13:54:324 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:54:330 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:54:330 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:54:330 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:54:330 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:54:331 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Using: UiSelector[INSTANCE=
+2015-11-14 21:13:54:332 - info: [debug] [UIAUTOMATOR STDOUT] 0, RESOURCE_ID=com.policybazaar:id/otp_edittext][/APPIUM-UIAUTO]
+2015-11-14 21:13:54:357 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:54:360 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:54:360 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:54:406 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:54:408 - info: [debug] Waited for 10970ms so far
+2015-11-14 21:13:54:922 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:54:935 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:54:936 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:54:936 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:54:936 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:54:936 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:55:147 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:55:149 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:55:150 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:55:180 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:55:181 - info: [debug] Waited for 11743ms so far
+2015-11-14 21:13:55:696 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:55:704 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:55:704 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:55:704 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:55:704 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:55:705 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:55:965 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:55:967 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:55:969 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:56:014 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:56:015 - info: [debug] Waited for 12577ms so far
+2015-11-14 21:13:56:523 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:56:528 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:56:529 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:56:529 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:56:529 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:56:529 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:56:545 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:56:547 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:56:548 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:56:779 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:56:780 - info: [debug] Waited for 13341ms so far
+2015-11-14 21:13:57:288 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:57:295 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:57:295 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:57:296 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:57:296 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:57:299 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:57:354 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:57:357 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:57:358 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:57:429 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:57:437 - info: [debug] Waited for 13999ms so far
+2015-11-14 21:13:57:939 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:57:944 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:57:945 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:57:945 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:57:946 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:57:946 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:57:969 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:57:971 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:57:981 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:58:020 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:58:021 - info: [debug] Waited for 14582ms so far
+2015-11-14 21:13:58:536 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:58:541 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:58:543 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:58:543 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:58:543 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:58:543 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:58:595 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:58:598 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:58:600 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:58:645 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:58:647 - info: [debug] Waited for 15208ms so far
+2015-11-14 21:13:59:159 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:59:166 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:59:166 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:59:167 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:59:167 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:59:168 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:59:207 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:59:222 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:59:240 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:59:265 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:59:265 - info: [debug] Waited for 15827ms so far
+2015-11-14 21:13:59:768 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:13:59:773 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:13:59:775 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:13:59:775 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:13:59:777 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:59:777 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:59:846 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:13:59:846 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:13:59:848 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:13:59:892 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:13:59:894 - info: [debug] Waited for 16456ms so far
+2015-11-14 21:14:00:408 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:14:00:413 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:14:00:413 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:14:00:413 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:14:00:413 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:00:414 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Using: UiSelector[INSTANCE=
+2015-11-14 21:14:00:414 - info: [debug] [UIAUTOMATOR STDOUT] 0, RESOURCE_ID=com.policybazaar:id/otp_edittext][/APPIUM-UIAUTO]
+2015-11-14 21:14:00:447 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:14:00:449 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:00:449 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:14:00:654 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:14:00:656 - info: [debug] Waited for 17218ms so far
+2015-11-14 21:14:01:157 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:14:01:172 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:14:01:172 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:14:01:172 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:14:01:172 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:01:173 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:14:01:225 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:14:01:230 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:01:264 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:14:01:266 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:14:01:268 - info: [debug] Waited for 17830ms so far
+2015-11-14 21:14:01:781 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:14:01:787 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:14:01:787 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:14:01:788 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:14:01:789 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:01:789 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:14:01:815 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:14:01:816 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:01:816 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:14:01:836 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:14:01:837 - info: [debug] Waited for 18399ms so far
+2015-11-14 21:14:02:343 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:14:02:349 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:14:02:349 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:14:02:349 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:14:02:350 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:02:350 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Using: UiSelector[INSTANCE=
+2015-11-14 21:14:02:350 - info: [debug] [UIAUTOMATOR STDOUT] 0, RESOURCE_ID=com.policybazaar:id/otp_edittext][/APPIUM-UIAUTO]
+2015-11-14 21:14:02:368 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:14:02:371 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:02:374 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:14:02:428 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:14:02:432 - info: [debug] Waited for 18993ms so far
+2015-11-14 21:14:02:922 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:14:02:930 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:14:02:930 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:14:02:930 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:14:02:930 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:02:931 - info: [debug] [UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Using: UiSelector[INSTANCE=
+2015-11-14 21:14:02:931 - info: [debug] [UIAUTOMATOR STDOUT] 0, RESOURCE_ID=com.policybazaar:id/otp_edittext][/APPIUM-UIAUTO]
+2015-11-14 21:14:02:983 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:14:02:983 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:02:983 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:14:03:000 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:14:03:000 - info: [debug] Waited for 19562ms so far
+2015-11-14 21:14:03:513 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}]
+2015-11-14 21:14:03:519 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/otp_edittext","context":"","multiple":false}}
+2015-11-14 21:14:03:519 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:14:03:519 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:14:03:520 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:03:520 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:14:03:569 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2015-11-14 21:14:03:571 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/otp_edittext using ID with the contextId:  multiple: false
+2015-11-14 21:14:03:573 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/otp_edittext]
+2015-11-14 21:14:03:805 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2015-11-14 21:14:03:805 - info: [debug] Condition unmet after 20367ms. Timing out.
+2015-11-14 21:14:03:806 - info: [debug] Responding to client with error: {"status":7,"value":{"message":"An element could not be located on the page using the given search parameters.","origValue":"No element found"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:14:03:809 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element 500 20371.695 ms - 195 
+2015-11-14 21:14:03:935 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element {"using":"id","value":"com.policybazaar:id/iv_logo"}
+2015-11-14 21:14:03:936 - info: [debug] Waiting up to 20000ms for condition
+2015-11-14 21:14:03:936 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/iv_logo","context":"","multiple":false}]
+2015-11-14 21:14:03:946 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/iv_logo","context":"","multiple":false}}
+2015-11-14 21:14:03:947 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:14:03:947 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:14:03:947 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/iv_logo using ID with the contextId:  multiple: false
+2015-11-14 21:14:03:947 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/iv_logo]
+2015-11-14 21:14:03:976 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"13"}}
+2015-11-14 21:14:03:978 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"13"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:14:03:980 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element 200 44.979 ms - 88 {"status":0,"value":{"ELEMENT":"13"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:14:03:992 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element {"using":"id","value":"com.policybazaar:id/iv_logo"}
+2015-11-14 21:14:03:993 - info: [debug] Waiting up to 20000ms for condition
+2015-11-14 21:14:03:993 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.policybazaar:id/iv_logo","context":"","multiple":false}]
+2015-11-14 21:14:03:998 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.policybazaar:id/iv_logo","context":"","multiple":false}}
+2015-11-14 21:14:04:001 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:14:04:002 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:14:04:004 - info: [debug] [BOOTSTRAP] [debug] Finding com.policybazaar:id/iv_logo using ID with the contextId:  multiple: false
+2015-11-14 21:14:04:008 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.policybazaar:id/iv_logo]
+2015-11-14 21:14:04:055 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"14"}}
+2015-11-14 21:14:04:058 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"14"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:14:04:060 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element 200 67.766 ms - 88 {"status":0,"value":{"ELEMENT":"14"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:14:04:072 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/14/click {"id":"14"}
+2015-11-14 21:14:04:073 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"14"}]
+2015-11-14 21:14:04:080 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"14"}}
+2015-11-14 21:14:04:083 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:14:04:083 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2015-11-14 21:14:04:319 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2015-11-14 21:14:04:321 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:14:04:323 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/14/click 200 250.449 ms - 76 {"status":0,"value":true,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:14:04:334 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element {"using":"-android uiautomator","value":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Two Wheeler Insurance\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Two Wheeler Insurance\").instance(0));"}
+2015-11-14 21:14:04:334 - info: [debug] Waiting up to 20000ms for condition
+2015-11-14 21:14:04:335 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Two Wheeler Insurance\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Two Wheeler Insurance\").instance(0));","context":"","multiple":false}]
+2015-11-14 21:14:04:346 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Two Wheeler Insurance\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Two Wheeler Insurance\").instance(0));","context":"","multiple":false}}
+2015-11-14 21:14:04:346 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:14:04:346 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2015-11-14 21:14:04:347 - info: [debug] [BOOTSTRAP] [debug] Finding new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("Two Wheeler Insurance").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Two Wheeler Insurance").instance(0)); using ANDROID_UIAUTOMATOR with the contextId:  multiple: false
+2015-11-14 21:14:04:347 - info: [debug] [BOOTSTRAP] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("Two Wheeler Insurance").instance(0))
+2015-11-14 21:14:04:354 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: boolean arg: true
+2015-11-14 21:14:04:355 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: int arg: 0
+2015-11-14 21:14:04:357 - info: [debug] [BOOTSTRAP] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().descriptionContains("Two Wheeler Insurance").instance(0), 
+2015-11-14 21:14:04:358 - info: [debug] [BOOTSTRAP] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().descriptionContains("Two Wheeler Insurance").instance(0)
+2015-11-14 21:14:04:358 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: class java.lang.String arg: "Two Wheeler Insurance"
+2015-11-14 21:14:04:358 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: int arg: 0
+2015-11-14 21:14:04:359 - info: [debug] [BOOTSTRAP] [debug] Method name: scrollIntoView
+2015-11-14 21:14:04:359 - info: [debug] [BOOTSTRAP] [debug] Setting uiObject for scrollIntoView
+2015-11-14 21:14:05:413 - info: [debug] [BOOTSTRAP] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@3386a0a2
+2015-11-14 21:14:10:450 - info: [debug] [BOOTSTRAP] [debug] Invoke complete.
+2015-11-14 21:14:10:453 - info: [debug] [BOOTSTRAP] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Two Wheeler Insurance").instance(0))
+2015-11-14 21:14:10:457 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: boolean arg: true
+2015-11-14 21:14:10:460 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: int arg: 0
+2015-11-14 21:14:10:462 - info: [debug] [BOOTSTRAP] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().textContains("Two Wheeler Insurance").instance(0), 
+2015-11-14 21:14:10:466 - info: [debug] [BOOTSTRAP] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().textContains("Two Wheeler Insurance").instance(0)
+2015-11-14 21:14:10:467 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: class java.lang.String arg: "Two Wheeler Insurance"
+2015-11-14 21:14:10:469 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: int arg: 0
+2015-11-14 21:14:10:469 - info: [debug] [BOOTSTRAP] [debug] Method name: scrollIntoView
+2015-11-14 21:14:10:470 - info: [debug] [BOOTSTRAP] [debug] Setting uiObject for scrollIntoView
+2015-11-14 21:14:10:826 - info: [debug] [BOOTSTRAP] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@148ff133
+2015-11-14 21:14:14:261 - info: [debug] [BOOTSTRAP] [debug] Invoke complete.
+2015-11-14 21:14:14:262 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CONTAINS_DESCRIPTION=Two Wheeler Insurance, INSTANCE=0]
+2015-11-14 21:14:14:499 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CONTAINS_TEXT=Two Wheeler Insurance, INSTANCE=0]
+2015-11-14 21:14:14:519 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"15"}}
+2015-11-14 21:14:14:520 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"15"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:14:14:521 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element 200 10188.437 ms - 88 {"status":0,"value":{"ELEMENT":"15"},"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:14:14:530 - info: --> POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/15/click {"id":"15"}
+2015-11-14 21:14:14:531 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"15"}]
+2015-11-14 21:14:14:535 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"15"}}
+2015-11-14 21:14:14:535 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2015-11-14 21:14:14:535 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2015-11-14 21:14:15:119 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2015-11-14 21:14:15:120 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
+2015-11-14 21:14:15:121 - info: <-- POST /wd/hub/session/cf9ffb29-3424-4451-b83f-6b69d4fbd24d/element/15/click 200 591.509 ms - 76 {"status":0,"value":true,"sessionId":"cf9ffb29-3424-4451-b83f-6b69d4fbd24d"}
