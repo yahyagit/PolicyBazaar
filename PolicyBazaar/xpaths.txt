@@ -11,6 +11,8 @@ com.policybazaar:id/indicator
 
 com.policybazaar:id/bannerViewPager --- car
 
+
+
 My Account
 
 My Policies:"com.policybazaar:id/id_mypolic"
@@ -30,3 +32,40 @@ Track Application:"com.policybazaar:id/idcom_trackapplication"
 My Profile:"com.policybazaar:id/idcom_myprofile"
 
 Sync Account:"com.policybazaar:id/idcom_sync"
+
+
+My Policies(Booked Policies:Default)
+
+Booked Policies:"com.policybazaar:id/diclaimer_id"
+
+Uploaded Policies: "com.policybazaar:id/titleid_uploaded_policyall"
+
+content: com.policybazaar:id/notification_view
+
+MyPolicies: "com.policybazaar:id/actionBarTitle"
+
+
+Upload Policies:
+
+Upload Policy Button:com.policybazaar:id/doucument_addmore
+Content: com.policybazaar:id/policy_listCheck
+Booked policies link:com.policybazaar:id/purchasedPolicy_id_allpolices
+Uploaded Policies link:com.policybazaar:id/title_privacyPolicy
+
+
+
+
+
+
+Motor Insta Renewal:
+
+top text content: com.policybazaar:id/txtUploadPolicy
+
+Gallery: "com.policybazaar:id/selectFromGalleryLayout" 
+Camera: "com.policybazaar:id/selectFromCameraLayout"
+Document: "com.policybazaar:id/selectDocumentLayout"
+Bottom text content:"com.policybazaar:id/txtHaveYouMade"
+
+toggle: "com.policybazaar:id/toggle"
+proceed button:"com.policybazaar:id/secondary_proceed"
+
