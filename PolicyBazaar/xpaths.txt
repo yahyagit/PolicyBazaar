@@ -1,4 +1,3 @@
-
 Main Page
 My Account: id= "com.policybazaar:id/dashboard_loginStatus"
 Compare Policies id= "com.policybazaar:id/textView1"
