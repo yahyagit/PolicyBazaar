@@ -1,7 +1,6 @@
 package testCases;
 
 import java.net.MalformedURLException;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -12,7 +11,6 @@ import org.testng.annotations.Test;
 import libraries.ProjectSpecific;
 import libraries.SuperAppium;
 import pom.HomePageElements;
-
 
 public class HomePage {
 	public static String MobileNumber = "9663514114";
@@ -41,21 +39,12 @@ public class HomePage {
 		public void notification() {
 		mobileelement.ghanti.click();
 		}
-	
-  @BeforeMethod
-  public void beforeMethod() {
-  }
-
-  @AfterMethod
-  public void afterMethod() {
-  }
-
   
-
- 
-
-  @AfterSuite
-  public void afterSuite() {
-  }
-
+	@AfterMethod
+	public void afterMethod() {
+	}
+  
+	@AfterSuite
+	public void afterSuite() {
+	}
 }
