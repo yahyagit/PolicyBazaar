@@ -1,17 +1,17 @@
 package testCases;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-
 import java.net.MalformedURLException;
 
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
-import libraries.SuperAppium;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
 import libraries.ProjectSpecific;
+import libraries.SuperAppium;
+import pom.HomePageElements;
 
 
 public class HomePage {
@@ -20,6 +20,7 @@ public class HomePage {
 	public static String deviceName = "ca18b445";
 	public static String appActivity = "com.policybazaar.login.Splash_DashBoard";
 	public static String appPackage = "com.policybazaar";
+	HomePageElements mobileelement =new HomePageElements();
 	
 	@BeforeSuite
 	public void startserver() {
@@ -38,6 +39,7 @@ public class HomePage {
 	
 	@Test(dependsOnMethods = { "appRegistration" })
 		public void notification() {
+		mobileelement.ghanti.click();
 		}
 	
   @BeforeMethod

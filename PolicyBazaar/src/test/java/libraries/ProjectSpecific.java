@@ -1,13 +1,13 @@
 package libraries;
 
-import pom.HomePage;
+import pom.HomePageElements;
 import libraries.Generic;
 
 public class ProjectSpecific {
 	
 	public static void numberRegistration(String MobileNumber) throws InterruptedException
 	  {
-		HomePage mobileelement =new HomePage();
+		HomePageElements mobileelement =new HomePageElements();
 		mobileelement.mobilenuberinputbox.sendKeys(MobileNumber);
 		Generic.waitForElementVisible(SuperAppium.driver, mobileelement.submitButton);
 		mobileelement.submitButton.click();

@@ -6,7 +6,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import libraries.SuperAppium;
 
 
-public class HomePage {
+public class HomePageElements {
 	
 	//Identify elements
 	@AndroidFindBy(id = "com.policybazaar:id/mobile_number_edittext")
