@@ -1,9 +1,9 @@
 package pom;
 
+import java.util.concurrent.TimeUnit;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-
-
+import libraries.SuperAppium;
 
 
 public class HomePage {
@@ -31,4 +31,5 @@ public class HomePage {
 	
 	@AndroidFindBy(id = "com.policybazaar:id/notificationIcon")
 	public MobileElement ghanti;
+	
 }

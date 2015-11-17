@@ -32,6 +32,9 @@ import org.testng.Reporter;
 
 import com.google.common.base.Function;
 
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+
 
 /*
  * Author : Aditya
@@ -207,7 +210,7 @@ public class Generic
 		return cell;
 	}
 
-	public static boolean waitForElementVisible(WebDriver driver, WebElement element)
+	public static boolean waitForElementVisible(AndroidDriver driver, MobileElement element)
 	{
 		
 		try
@@ -230,7 +233,7 @@ public class Generic
 		return false;
 	}
 	
-	public static void waitForElementToClick(WebDriver driver, WebElement element)
+	public static void waitForElementToClick(AndroidDriver driver, MobileElement element)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.withTimeout(SuperAppium.implicitlyWait, TimeUnit.SECONDS).pollingEvery(100, TimeUnit.MILLISECONDS).ignoring(StaleElementReferenceException.class);
@@ -238,14 +241,14 @@ public class Generic
 	}
 	
 		
-	public static void waitForTitlePresent(WebDriver driver, String title)
+	public static void waitForTitlePresent(AndroidDriver driver, String title)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.withTimeout(30, TimeUnit.SECONDS).pollingEvery(100, TimeUnit.MILLISECONDS).ignoring(StaleElementReferenceException.class);
 		wait.until(ExpectedConditions.titleContains(title));
 	}
 	
-	public static void validatePageTitle(WebDriver driver, String actualTitle)
+	public static void validatePageTitle(AndroidDriver driver, String actualTitle)
 	{
 		waitForTitlePresent(driver, actualTitle);
 		String currentTitle=driver.getTitle();
@@ -258,14 +261,14 @@ public class Generic
 		Reporter.log("Assertion done on : "+actual,true);
 	}
 	
-	public static void doAssertion(WebDriver driver,WebElement actual, String xpath)
+	public static void doAssertion(AndroidDriver driver, MobileElement actual, String xpath)
 	{
 		String obtainedTxt = driver.findElement(By.xpath(xpath)).getText();
 		String actualTxt=actual.getText();
 		Assert.assertEquals(actualTxt, obtainedTxt);
 	}
 	
-	public static void waitForPageLoad(WebDriver driver)
+	public static void waitForPageLoad(AndroidDriver driver)
 	{
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
@@ -288,7 +291,7 @@ public class Generic
 		SuperAppium.driver.manage().timeouts().implicitlyWait(SuperAppium.implicitlyWait, TimeUnit.SECONDS);
 	}
 	
-	public static boolean waitForElement(final WebElement element)
+	public static boolean waitForElement(final MobileElement element)
 	{
 		nullifyImplicitlyWait();
 		FluentWait<WebElement> wait = new FluentWait<WebElement>(element);
@@ -328,7 +331,7 @@ public class Generic
 		
 	}
 	
-	public static boolean waitForElement_LongPeriod(final WebElement element)
+	public static boolean waitForElement_LongPeriod(final MobileElement element)
 	{
 		nullifyImplicitlyWait();
 		FluentWait<WebElement> wait = new FluentWait<WebElement>(element);
@@ -368,7 +371,7 @@ public class Generic
 		
 	}
 	
-	public static boolean waitForElement_smallPeriod(final WebElement element)
+	public static boolean waitForElement_smallPeriod(final MobileElement element)
 	{
 		nullifyImplicitlyWait();
 		FluentWait<WebElement> wait = new FluentWait<WebElement>(element);
