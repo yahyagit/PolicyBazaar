@@ -5,6 +5,7 @@ Hospital & Garage Locator = "com.policybazaar:id/textView3"
 Drive-Wise id="com.policybazaar:id/textView5"
 
 Notification icon = "com.policybazaar:id/notificationIcon"
+Ghanti icon: "com.policybazaar:id/clear"
 
 com.policybazaar:id/indicator
 
