@@ -69,3 +69,26 @@ Bottom text content:"com.policybazaar:id/txtHaveYouMade"
 toggle: "com.policybazaar:id/toggle"
 proceed button:"com.policybazaar:id/secondary_proceed"
 
+Menu
+
+Name:id:"com.policybazaar:id/menuUsername"
+
+home menu item id:"com.policybazaar:id/menuItemHome"
+
+My Poloicies menu item id:"com.policybazaar:id/menuItemMyPoloicies"
+
+My Documents menu item id: "com.policybazaar:id/menuItemMyDocuments"
+
+Track Application menu item id: "com.policybazaar:id/menuItemTrackApplication"
+
+My Profile menu item id: "com.policybazaar:id/menuItemMyProfile"
+
+Two Wheeler Insurance id: "com.policybazaar:id/menuItemTwoWheeler"
+
+Car Insurance menu item id: "com.policybazaar:id/menuItemCarInsurance"
+
+Term insurance id: "com.policybazaar:id/menuItemTerm"
+
+Investment Plans id: "com.policybazaar:id/menuItemInvestment"
+
+Health Insurance id: "com.policybazaar:id/menuItemHealth
