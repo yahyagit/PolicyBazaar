@@ -3,7 +3,7 @@ package pom;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class MyAccount {
+public class MyAccountElements {
 	
 	//MyAccount elements
 	@AndroidFindBy(id = "com.policybazaar:id/id_mypolic")

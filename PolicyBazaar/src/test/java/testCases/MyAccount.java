@@ -11,10 +11,12 @@ import libraries.Generic;
 import libraries.ProjectSpecific;
 import libraries.SuperAppium;
 import pom.HomePageElements;
+import pom.MyAccountElements;
 
 public class MyAccount 
 {
-	HomePageElements mobileelement =new HomePageElements();
+	HomePageElements homepageelement =new HomePageElements();
+	MyAccountElements accountelements =new MyAccountElements();
 	Generic find = new Generic();
 	
 	@BeforeSuite
@@ -31,4 +33,10 @@ public class MyAccount
 	  public void appRegistration() throws InterruptedException {
 		  ProjectSpecific.numberRegistration();
 	  }
+	@Test
+	public void mypolicies()
+	{
+		homepageelement.MyAccount.click();
+		accountelements.myPolicies.click();
+	}
 }
