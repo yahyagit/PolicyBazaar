@@ -3,13 +3,16 @@ package libraries;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.Random;
 import java.util.StringTokenizer;
 import java.util.concurrent.TimeUnit;
@@ -43,6 +46,26 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class Generic 
 {
+	public String valueof(String Field)
+	{
+		 File file = new File("./data/datafile.properties");
+		  
+			FileInputStream fileInput = null;
+			try {
+				fileInput = new FileInputStream(file);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			}
+			Properties prop = new Properties();
+			
+			//load properties file
+			try {
+				prop.load(fileInput);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			return prop.getProperty(Field);
+	}
 	
 	public static String getStringCellValue(String excelPath, String sheetName, int row, int col)
 	{

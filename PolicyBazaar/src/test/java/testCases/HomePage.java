@@ -10,15 +10,13 @@ import org.testng.annotations.Test;
 
 import libraries.ProjectSpecific;
 import libraries.SuperAppium;
+import libraries.Generic;
 import pom.HomePageElements;
 
 public class HomePage {
-	public static String MobileNumber = "9663514114";
-	public static String appPath = "\\app\\PolicyBazaar_1.0.8.apk";
-	public static String deviceName = "ca18b445";
-	public static String appActivity = "com.policybazaar.login.Splash_DashBoard";
-	public static String appPackage = "com.policybazaar";
+	
 	HomePageElements mobileelement =new HomePageElements();
+	Generic find = new Generic();
 	
 	@BeforeSuite
 	public void startserver() {
@@ -27,17 +25,18 @@ public class HomePage {
 	
 	@BeforeClass
 	  public void openApp() throws MalformedURLException {
-		  SuperAppium.openApp(appPath, deviceName, appActivity, appPackage);
+		  SuperAppium.openApp(find.valueof("appPath"), find.valueof("deviceName"), find.valueof("appActivity"), find.valueof("appPackage"));
 	  }
 	
 	@Test
 	  public void appRegistration() throws InterruptedException {
-		  ProjectSpecific.numberRegistration(MobileNumber);
+		  ProjectSpecific.numberRegistration(find.valueof("MobileNumber"));
 	  }
 	
 	@Test(dependsOnMethods = { "appRegistration" })
 		public void notification() {
 		mobileelement.ghanti.click();
+		mobileelement.close.click();
 		}
   
 	@AfterMethod

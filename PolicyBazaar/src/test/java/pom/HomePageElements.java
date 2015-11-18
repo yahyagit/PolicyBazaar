@@ -32,4 +32,6 @@ public class HomePageElements {
 	@AndroidFindBy(id = "com.policybazaar:id/notificationIcon")
 	public MobileElement ghanti;
 	
+	@AndroidFindBy(id = "com.policybazaar:id/clear")
+	public MobileElement close;
 }

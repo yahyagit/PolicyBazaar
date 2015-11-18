@@ -1,10 +1,13 @@
 package libraries;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -53,6 +56,7 @@ public class SuperAppium
 		if(service.isRunning())
 			System.out.println("Appium server started successfully");
 	}
+	
 
 		public static void openApp(String appPath, String deviceName, String appActivity, String appPackage) throws MalformedURLException{
 		
