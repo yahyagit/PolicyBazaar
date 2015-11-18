@@ -17,6 +17,7 @@ public class MyAccount
 {
 	HomePageElements homepageelement =new HomePageElements();
 	MyAccountElements accountelements =new MyAccountElements();
+	
 	Generic find = new Generic();
 	
 	@BeforeSuite
@@ -38,5 +39,6 @@ public class MyAccount
 	{
 		homepageelement.MyAccount.click();
 		accountelements.myPolicies.click();
+		
 	}
 }
