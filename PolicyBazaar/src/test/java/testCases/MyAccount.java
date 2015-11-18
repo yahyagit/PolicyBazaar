@@ -1,23 +1,34 @@
 package testCases;
 
 
+import java.net.MalformedURLException;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
 import libraries.Generic;
+import libraries.ProjectSpecific;
+import libraries.SuperAppium;
+import pom.HomePageElements;
 
 public class MyAccount 
 {
-	static Generic find = new Generic();
-	public static void main(String a[])
-	{
-		String MobileNumber = find.valueof("MobileNumber");
-		String appPath = find.valueof("appPath");
-		String deviceName = find.valueof("deviceName");
-		String appActivity = find.valueof("appActivity");
-		String appPackage = find.valueof("appPackage");
-		
-		System.out.println(MobileNumber);
-		System.out.println(appPath);
-		System.out.println(deviceName);
-		System.out.println(appActivity);
-		System.out.println(appPackage);
+	HomePageElements mobileelement =new HomePageElements();
+	Generic find = new Generic();
+	
+	@BeforeSuite
+	public void startserver() {
+		SuperAppium.startServer(); 
 	}
+	
+	@BeforeClass
+	  public void openApp() throws MalformedURLException {
+		  SuperAppium.openApp();
+	  }
+	
+	@Test
+	  public void appRegistration() throws InterruptedException {
+		  ProjectSpecific.numberRegistration();
+	  }
 }

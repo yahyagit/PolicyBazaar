@@ -25,12 +25,12 @@ public class HomePage {
 	
 	@BeforeClass
 	  public void openApp() throws MalformedURLException {
-		  SuperAppium.openApp(find.valueof("appPath"), find.valueof("deviceName"), find.valueof("appActivity"), find.valueof("appPackage"));
+		  SuperAppium.openApp();
 	  }
 	
 	@Test
 	  public void appRegistration() throws InterruptedException {
-		  ProjectSpecific.numberRegistration(find.valueof("MobileNumber"));
+		  ProjectSpecific.numberRegistration();
 	  }
 	
 	@Test(dependsOnMethods = { "appRegistration" })

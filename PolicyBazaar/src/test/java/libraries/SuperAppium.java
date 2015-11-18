@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.server.handler.FindActiveElement;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -32,13 +33,12 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 public class SuperAppium 
 {
 	public static AppiumDriverLocalService service;
-	public static String nodejsexefilepath = "C:/Program Files/nodejs/node.exe";
-	public static String appiumjsfilepath = "G:/appium/Appium/node_modules/appium/bin/appium.js";
 	public static AndroidDriver driver;
 	public static String parentWh;
 	static String url=Generic.getStringCellValue("./excels/data setup.xls", "ConfigSheet", 1, 1);
 	protected static String excelPath;
 	public static int implicitlyWait=20;
+	static Generic find = new Generic();
 	
 	public static void startServer()
 	{
@@ -46,8 +46,8 @@ public class SuperAppium
 		String finalLogPath=baselogPath+"\\logs\\AppiumServerLogs.txt";
 		service = AppiumDriverLocalService
 				.buildService(new AppiumServiceBuilder()
-				.usingDriverExecutable(new File(nodejsexefilepath))
-				.withAppiumJS(new File("appiumjsfilepath"))
+				.usingDriverExecutable(new File(find.valueof("nodejsexefilepath")))
+				.withAppiumJS(new File(find.valueof("appiumjsfilepath")))
 				.withLogFile(new File(finalLogPath))
 				.withIPAddress("127.0.0.1")
 				.usingPort(4747));
@@ -58,15 +58,15 @@ public class SuperAppium
 	}
 	
 
-		public static void openApp(String appPath, String deviceName, String appActivity, String appPackage) throws MalformedURLException{
+		public static void openApp() throws MalformedURLException{
 		
 		File appDir = new File(System.getProperty("user.dir"));//G:\appium\myown
-		File app = new File(appDir, appPath);
+		File app = new File(appDir, find.valueof("appPath"));
 
 		DesiredCapabilities cap=new DesiredCapabilities();			
-		cap.setCapability("deviceName", deviceName);				
-		cap.setCapability("appActivity", appActivity);
-		cap.setCapability("appPackage", appPackage);
+		cap.setCapability("deviceName", find.valueof("deviceName"));				
+		cap.setCapability("appActivity", find.valueof("appActivity"));
+		cap.setCapability("appPackage", find.valueof("appPackage"));
 	
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4747/wd/hub"), cap);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	
