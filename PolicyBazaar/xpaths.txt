@@ -92,3 +92,38 @@ Term insurance id: "com.policybazaar:id/menuItemTerm"
 Investment Plans id: "com.policybazaar:id/menuItemInvestment"
 
 Health Insurance id: "com.policybazaar:id/menuItemHealth
+
+Recent Searches: "com.policybazaar:id/menuItemRecentSearches"
+Hospital & Garage Locator: "com.policybazaar:id/menuItemLocator"
+Motor Insta Renewal: "com.policybazaar:id/menuItemMIR"
+Roadside Assistance: "com.policybazaar:id/menuItemRoadsideAssistance"
+Drive-Wise: "com.policybazaar:id/menuItemRoadsideAssistance"
+Ask Terry: "com.policybazaar:id/menuItemAskTerry"
+Alerts: "com.policybazaar:id/menuItemAlerts"
+Feedback: "com.policybazaar:id/menuItemFeedback"
+Register a Complaint: "com.policybazaar:id/menuItemRegisterComplaint"
+Support: "com.policybazaar:id/menuItemSupport"
+Rate us: "com.policybazaar:id/menuItemRate"
+Share: "com.policybazaar:id/menuItemShare"
+Legal Information: "com.policybazaar:id/menuItemPrivacy"
+About: "com.policybazaar:id/menuItemAbout"
+Logout: "com.policybazaar:id/menuItemLogout"
+
+Hospital and Garage locator
+
+incase GPS will not be active:
+
+Enable Location Services(GPS)
+Cancel button:"com.policybazaar:id/gps_cancel"
+Go To Settings: "com.policybazaar:id/go_to_settings"
+
+When GPS will beactive:
+Hospital locator
+map: "com.policybazaar:id/map"
+Number of nearby hospitals: "com.policybazaar:id/ll_selection_criteria"
+Location button(by default delhi): com.policybazaar:id/selectedLocation
+
+Location Page:
+Type your location textbox: "com.policybazaar:id/et_locationsearch"
+
+Map list button:"com.policybazaar:id/button_map_list"
